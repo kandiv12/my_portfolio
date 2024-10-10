@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <title><%= title %></title>
     <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-bL1Yr3BYPwQDe1sPiP2YsBcXzG4exemj1H0Jvw20e9EINz0mZ3gLSGyIZWxXED8I8d9KKmS2klCm4dndn7dB1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
+
   <body>
     <%- include('header') %>
-    <!-- Include your header file -->
+    <!-- Include header -->
 
     <main>
       <section id="introduction">
         <div class="intro-content">
           <div class="intro-text">
             <h3>Hello!</h3>
-            <h2 class="name">I'm Vamshidhar Kandi</h2>
+            <h2 class="name">I'm <span class="c">Vamshidhar Kandi</span></h2>
             <p>
               As a skilled MERN Full Stack Developer proficient in React,
               Node.js, Express, and MySQL, I am dedicated to creating efficient
@@ -43,6 +45,6 @@
     </main>
 
     <%- include('footer') %>
-    <!-- Include your footer file if you have one -->
+    <!-- Include footer -->
   </body>
 </html>

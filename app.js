@@ -1,27 +1,34 @@
-const express=require('express');
-const app=express();
+const express = require('express');
+const app = express();
+const path = require('path');
 
-app.set('view engine','ejs');
+app.set('view engine', 'ejs');
 
-const path=require('path');
-
-app.use(express.urlencoded({extended:true}));
-
+// Middleware to parse URL-encoded and JSON data
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Import routes
+const aboutRoute = require('./routes/about');
+const contactRoute = require('./routes/contact');
 
-
-//define a route for the homepage
-
-app.get('/',(req,res)=>{
-    res.render('index');
+// Define a route for the homepage
+app.get('/', (req, res) => {
+    res.render('index', { 
+        title: 'My Blog'
+    });
 });
 
-const port=3000;
+// Use the about route
+app.use('/about', aboutRoute); 
 
-app.listen(port,()=>{
-    console.log('running server on port 3000');
+app.use('/contact', contactRoute);
+
+// Set the port and start the server
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Running server on port ${port}`);
 });
-
