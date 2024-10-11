@@ -27,8 +27,9 @@ app.use('/about', aboutRoute);
 
 app.use('/contact', contactRoute);
 
-// Set the port and start the server
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+// Start the server
 app.listen(port, () => {
     console.log(`Running server on port ${port}`);
 });
