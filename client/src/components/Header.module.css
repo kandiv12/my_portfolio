@@ -1,11 +1,10 @@
-/* Header Styling */
 .header {
-  background-color: #161b22; /* Dark secondary background */
+  background-color: #161b22; /* Dark header */
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Soft shadow effect */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -18,24 +17,22 @@
   align-items: center;
 }
 
-/* Logo */
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #ff9f1c; /* Elegant gold for contrast */
+  color: #ff9f1c; /* Gold logo */
   margin-right: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #0d1117; /* Darker background for logo */
+  background-color: #0d1117;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .logo:hover {
-  background-color: #e63946; /* Muted red for hover effect */
+  background-color: #e63946;
   transform: scale(1.1);
 }
 
-/* Blog name link */
 .siteName {
   color: #e5e5e5;
   text-decoration: none;
@@ -43,17 +40,18 @@
 }
 
 .siteName:hover {
-  color: #ff9f1c; /* Gold hover effect */
+  color: #ff9f1c;
 }
 
 /* Navigation */
 .navList {
   list-style-type: none;
   display: flex;
+  gap: 20px;
 }
 
 .navList li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .navLink {
@@ -65,24 +63,13 @@
 }
 
 .navLink:hover {
-  background-color: #ff9f1c; /* Gold background on hover */
+  background-color: #ff9f1c;
   color: #0d1117;
   border-radius: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navList {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navList li {
-    margin: 10px 0;
-  }
+/* Active Link Styling */
+.activeNavLink {
+  color: #ff9f1c; /* Gold for active link */
+  font-weight: bold;
 }

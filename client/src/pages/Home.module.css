@@ -1,67 +1,129 @@
-/* Page Container */
 .pageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 0 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  background-color: #0D1117; /* Dark background */
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(
+    135deg,
+    #0d1117,
+    #161b22
+  ); /* Smooth Dark Background */
+  color: #e5e5e5;
 }
 
-/* Main content layout */
 .pageContent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  text-align: center;
-  color: #E5E5E5; /* Soft white text for readability */
+  max-width: 1200px;
+  width: 100%;
 }
 
-/* Text content */
 .textContent {
   flex: 1;
-  font-size: 1.2em;
-  color: #E5E5E5; /* Ensuring consistent text color */
+  max-width: 600px;
+  text-align: left;
+  animation: fadeInUp 1s ease-in-out;
 }
 
-/* Image container */
 .imageContainer {
   flex: 1;
-  max-width: 45%; /* Increased from 50% to 45% */
+  max-width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imageContainer img {
-  width: 85%; /* Slightly increased from 80% to 85% */
-  max-width: 400px; /* Increased max width from 350px to 400px */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Soft shadow for premium look */
+.heroImage {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Highlighted text */
+.heroImage:hover {
+  transform: scale(1.05);
+}
+
+.welcome {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff9f1c;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .highlight {
-  color: #FF9F1C; /* Elegant gold for contrast */
+  color: #ff9f1c;
+  background: linear-gradient(90deg, #ff9f1c, #e63946);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .pageContent {
-    flex-direction: column;
-  }
+.description {
+  font-size: 1.2em;
+  margin-top: 15px;
+  line-height: 1.6;
+}
 
-  .imageContainer {
-    max-width: 100%;
-    margin-top: 20px;
-  }
+.gradientText {
+  color: #ff9f1c;
+  font-weight: bold;
+}
 
-  .imageContainer img {
-    width: 75%; /* Increased from 70% */
-    max-width: 350px; /* Increased from 300px */
+.skillsHeader {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #ff9f1c;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.skillsList li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #e5e5e5;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skillsList li:hover {
+  transform: translateX(5px);
+}
+
+.ctaText {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.ctaLink {
+  color: #ff9f1c;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.ctaLink:hover {
+  color: #e63946;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -46,7 +46,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className={styles.copyright}>© 2024 VK. All Rights Reserved.</p>
+      <p className={styles.copyright}>© 2025 VK. All Rights Reserved.</p>
     </footer>
   );
 };
