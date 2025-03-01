@@ -1,8 +1,10 @@
+/* Footer Styling */
 .footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #161b22; /* Dark secondary background */
+  color: #e5e5e5; /* Soft white text for readability */
   padding: 20px;
   text-align: center;
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.1); /* Soft shadow effect */
 }
 
 /* Social Links */
@@ -17,15 +19,17 @@
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease-in-out;
+  filter: brightness(0.8); /* Slightly dim default state */
 }
 
 .socialLinks a img:hover {
   transform: scale(1.2);
+  filter: brightness(1); /* Brighten on hover */
 }
 
 /* Copyright Text */
 .copyright {
   margin-top: 10px;
   font-size: 0.8em;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6); /* Slightly muted for elegance */
 }

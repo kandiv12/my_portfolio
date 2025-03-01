@@ -8,11 +8,60 @@
 /* Global styles for body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #0D1117; /* Dark charcoal background */
+  color: #E5E5E5; /* Soft white text for readability */
 }
 
 /* Main Content */
 main {
   padding-top: 80px; /* Adjust this based on your header height */
+}
+
+/* Links */
+a {
+  color: #FF9F1C; /* Elegant gold for contrast */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #E63946; /* Muted red for hover effect */
+}
+
+/* Buttons */
+.button {
+  background: linear-gradient(135deg, #FF9F1C, #E63946);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+header {
+  background-color: #161B22; /* Dark grey secondary color */
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #161B22;
+  padding: 20px;
+  text-align: center;
+  color: #E5E5E5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }

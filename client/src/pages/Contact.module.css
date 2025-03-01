@@ -7,6 +7,7 @@
   padding: 0 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  background-color: #0d1117; /* Dark background */
 }
 
 /* Contact text section */
@@ -15,6 +16,7 @@
   margin-right: 20px;
   font-size: 1.2em;
   text-align: center;
+  color: #e5e5e5; /* Soft white text for readability */
 }
 
 .contactText h3 {
@@ -23,19 +25,20 @@
 
 /* Highlight text */
 .highlight {
-  color: #4caf50;
+  color: #ff9f1c; /* Elegant gold for contrast */
 }
 
 /* Email link styling */
 .emailLink {
   font-weight: bold;
   text-decoration: none;
-  color: #4caf50;
+  color: #ff9f1c;
+  transition: color 0.3s ease-in-out;
 }
 
 .emailLink:hover {
   text-decoration: underline;
-  color: #2e7d32;
+  color: #e63946; /* Muted red for hover effect */
 }
 
 /* Contact image */
@@ -52,6 +55,7 @@
   max-width: 400px; /* Increased max width from 350px to 400px */
   height: auto;
   border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Soft shadow for premium look */
 }
 
 /* Responsive Design */

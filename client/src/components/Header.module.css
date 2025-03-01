@@ -1,10 +1,11 @@
+/* Header Styling */
 .header {
-  background-color: #4caf50;
+  background-color: #161b22; /* Dark secondary background */
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Soft shadow effect */
   position: fixed;
   top: 0;
   left: 0;
@@ -21,28 +22,28 @@
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #ffd700;
+  color: #ff9f1c; /* Elegant gold for contrast */
   margin-right: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #2f4f4f;
+  background-color: #0d1117; /* Darker background for logo */
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .logo:hover {
-  background-color: #555;
+  background-color: #e63946; /* Muted red for hover effect */
   transform: scale(1.1);
 }
 
 /* Blog name link */
 .siteName {
-  color: #fff;
+  color: #e5e5e5;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .siteName:hover {
-  color: #dff0d8;
+  color: #ff9f1c; /* Gold hover effect */
 }
 
 /* Navigation */
@@ -57,15 +58,15 @@
 
 .navLink {
   text-decoration: none;
-  color: #fff;
+  color: #e5e5e5;
   font-size: 1.2em;
   padding: 8px 16px;
   transition: background-color 0.3s ease;
 }
 
 .navLink:hover {
-  background-color: #fff;
-  color: #4caf50;
+  background-color: #ff9f1c; /* Gold background on hover */
+  color: #0d1117;
   border-radius: 5px;
 }
 
