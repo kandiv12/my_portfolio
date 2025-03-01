@@ -1,0 +1,77 @@
+/* Container layout */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* Contact text section */
+.contactText {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.contactText h3 {
+  margin-top: 15px;
+}
+
+/* Highlight text */
+.highlight {
+  color: #4caf50;
+}
+
+/* Email link styling */
+.emailLink {
+  font-weight: bold;
+  text-decoration: none;
+  color: #4caf50;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+  color: #2e7d32;
+}
+
+/* Contact image */
+.contactImage {
+  flex: 1;
+  max-width: 45%; /* Increased from 40% to 45% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactImage img {
+  width: 85%; /* Slightly increased from 80% to 85% */
+  max-width: 400px; /* Increased max width from 350px to 400px */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactText {
+    margin-right: 0;
+  }
+
+  .contactImage {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .contactImage img {
+    width: 75%; /* Increased from 70% */
+    max-width: 350px; /* Increased from 300px */
+  }
+}

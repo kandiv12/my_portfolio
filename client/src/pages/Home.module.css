@@ -1,0 +1,62 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* Main content layout */
+.pageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Text content */
+.textContent {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+/* Image container */
+.imageContainer {
+  flex: 1;
+  max-width: 45%; /* Increased from 50% to 45% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 85%; /* Slightly increased from 80% to 85% */
+  max-width: 400px; /* Increased max width from 350px to 400px */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Highlighted text */
+.highlight {
+  color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageContent {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .imageContainer img {
+    width: 75%; /* Increased from 70% */
+    max-width: 350px; /* Increased from 300px */
+  }
+}

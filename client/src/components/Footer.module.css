@@ -1,0 +1,31 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialLinks a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socialLinks a img:hover {
+  transform: scale(1.2);
+}
+
+/* Copyright Text */
+.copyright {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.7);
+}
