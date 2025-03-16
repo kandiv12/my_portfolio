@@ -5,58 +5,64 @@
   box-sizing: border-box;
 }
 
-/* Global styles for body */
+/* Default Dark Theme */
+:root {
+  --bg-color: #0d1117;
+  --text-color: #e5e5e5;
+  --header-bg: #161b22;
+  --footer-bg: #161b22;
+  --link-color: #ff9f1c;
+  --link-hover: #e63946;
+  --button-bg: linear-gradient(135deg, #ff9f1c, #e63946);
+  --button-hover-shadow: rgba(255, 255, 255, 0.2);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --header-bg: #ffffff;
+  --footer-bg: #ffffff;
+  --link-color: #007bff;
+  --link-hover: #0056b3;
+  --button-bg: linear-gradient(135deg, #007bff, #0056b3);
+  --button-hover-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Apply theme */
 body {
   font-family: Arial, sans-serif;
-  background-color: #0D1117; /* Dark charcoal background */
-  color: #E5E5E5; /* Soft white text for readability */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Main Content */
 main {
-  padding-top: 80px; /* Adjust this based on your header height */
+  padding-top: 80px;
 }
 
 /* Links */
 a {
-  color: #FF9F1C; /* Elegant gold for contrast */
+  color: var(--link-color);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #E63946; /* Muted red for hover effect */
-}
-
-/* Buttons */
-.button {
-  background: linear-gradient(135deg, #FF9F1C, #E63946);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+  color: var(--link-hover);
 }
 
 /* Header */
 header {
-  background-color: #161B22; /* Dark grey secondary color */
-  padding: 15px 20px;
-  text-align: center;
+  background-color: var(--header-bg);
+  transition: background 0.3s ease;
 }
 
 /* Footer */
 footer {
-  background-color: #161B22;
-  padding: 20px;
-  text-align: center;
-  color: #E5E5E5;
+  background-color: var(--footer-bg);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Responsive Design */

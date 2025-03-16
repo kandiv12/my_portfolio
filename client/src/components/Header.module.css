@@ -1,5 +1,5 @@
 .header {
-  background-color: #161b22; /* Dark header */
+  background-color: var(--header-bg);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: background 0.3s ease;
 }
 
 .title {
@@ -20,27 +21,27 @@
 .logo {
   font-size: 2rem;
   font-weight: bold;
-  color: #ff9f1c; /* Gold logo */
+  color: var(--link-color);
   margin-right: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #0d1117;
+  background-color: var(--bg-color);
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .logo:hover {
-  background-color: #e63946;
+  background-color: var(--link-hover);
   transform: scale(1.1);
 }
 
 .siteName {
-  color: #e5e5e5;
+  color: var(--text-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .siteName:hover {
-  color: #ff9f1c;
+  color: var(--link-color);
 }
 
 /* Navigation */
@@ -56,20 +57,27 @@
 
 .navLink {
   text-decoration: none;
-  color: #e5e5e5;
+  color: var(--text-color);
   font-size: 1.2em;
   padding: 8px 16px;
   transition: background-color 0.3s ease;
 }
 
 .navLink:hover {
-  background-color: #ff9f1c;
-  color: #0d1117;
+  background-color: var(--link-color);
+  color: var(--bg-color);
   border-radius: 5px;
 }
 
 /* Active Link Styling */
 .activeNavLink {
-  color: #ff9f1c; /* Gold for active link */
+  color: var(--link-color);
   font-weight: bold;
+}
+
+/* Theme Icon */
+.themeIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }

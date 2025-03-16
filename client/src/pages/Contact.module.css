@@ -1,4 +1,4 @@
-/* Container layout */
+/* Contact Page */
 .contactContainer {
   display: flex;
   justify-content: center;
@@ -7,7 +7,8 @@
   padding: 0 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background-color: #0d1117; /* Dark background */
+  background-color: var(--bg-color);
+  transition: background 0.3s ease;
 }
 
 /* Contact text section */
@@ -16,7 +17,7 @@
   margin-right: 20px;
   font-size: 1.2em;
   text-align: center;
-  color: #e5e5e5; /* Soft white text for readability */
+  color: var(--text-color);
 }
 
 .contactText h3 {
@@ -25,40 +26,40 @@
 
 /* Highlight text */
 .highlight {
-  color: #ff9f1c; /* Elegant gold for contrast */
+  color: var(--link-color);
 }
 
-/* Email link styling */
+/* Email link */
 .emailLink {
   font-weight: bold;
   text-decoration: none;
-  color: #ff9f1c;
+  color: var(--link-color);
   transition: color 0.3s ease-in-out;
 }
 
 .emailLink:hover {
   text-decoration: underline;
-  color: #e63946; /* Muted red for hover effect */
+  color: var(--link-hover);
 }
 
 /* Contact image */
 .contactImage {
   flex: 1;
-  max-width: 45%; /* Increased from 40% to 45% */
+  max-width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contactImage img {
-  width: 85%; /* Slightly increased from 80% to 85% */
-  max-width: 400px; /* Increased max width from 350px to 400px */
+  width: 85%;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Soft shadow for premium look */
+  box-shadow: 0px 4px 10px var(--button-hover-shadow);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;
@@ -75,7 +76,7 @@
   }
 
   .contactImage img {
-    width: 75%; /* Increased from 70% */
-    max-width: 350px; /* Increased from 300px */
+    width: 75%;
+    max-width: 350px;
   }
 }

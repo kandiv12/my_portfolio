@@ -4,12 +4,9 @@
   align-items: center;
   min-height: 100vh;
   padding: 50px 20px;
-  background: linear-gradient(
-    135deg,
-    #0d1117,
-    #161b22
-  ); /* Smooth Dark Background */
-  color: #e5e5e5;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .pageContent {
@@ -40,7 +37,7 @@
   width: 90%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px var(--button-hover-shadow);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -48,39 +45,19 @@
   transform: scale(1.05);
 }
 
-.welcome {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #ff9f1c;
-}
-
-.name {
-  font-size: 2em;
-  font-weight: bold;
-}
-
+/* Highlight text */
 .highlight {
-  color: #ff9f1c;
-  background: linear-gradient(90deg, #ff9f1c, #e63946);
+  color: var(--link-color);
+  background: linear-gradient(90deg, var(--link-color), var(--link-hover));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.description {
-  font-size: 1.2em;
-  margin-top: 15px;
-  line-height: 1.6;
-}
-
-.gradientText {
-  color: #ff9f1c;
-  font-weight: bold;
-}
-
+/* Skills */
 .skillsHeader {
   margin-top: 20px;
   font-size: 1.5em;
-  color: #ff9f1c;
+  color: var(--link-color);
 }
 
 .skillsList {
@@ -92,7 +69,7 @@
 .skillsList li {
   font-size: 1.1em;
   margin-bottom: 8px;
-  color: #e5e5e5;
+  color: var(--text-color);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -100,30 +77,14 @@
   transform: translateX(5px);
 }
 
-.ctaText {
-  margin-top: 20px;
-  font-size: 1.1em;
-}
-
+/* CTA */
 .ctaLink {
-  color: #ff9f1c;
+  color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .ctaLink:hover {
-  color: #e63946;
-}
-
-/* Fade-in animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: var(--link-hover);
 }
